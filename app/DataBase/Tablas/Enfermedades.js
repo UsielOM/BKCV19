@@ -19,3 +19,4 @@ const Enfermedades = sequelize.define('enfermedades', {
     }
 
 )
+module.exports = Enfermedades
