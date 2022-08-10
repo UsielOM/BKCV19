@@ -29,3 +29,7 @@ postInternos = function(request, callback) {
 }
 
 module.exports.init = init;
+
+
+//post
+module.exports.postInternos = postInternos;
