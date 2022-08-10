@@ -29,13 +29,13 @@ const loginUsuario = async(req, res) => {
         }
 
         //creat JWT
-        const token = await generarJWT(dbUser[0].Nombre, email);
+        const token = await generarJWT(dbUser[0].name, email);
 
         return res.json({
             ok: true,
             msg: 'ruta login',
-            email: dbUser[0].Correo,
-            name: dbUser[0].Nombre,
+            email: dbUser[0].email,
+            name: dbUser[0].name,
             token
         });
     } catch (error) {
