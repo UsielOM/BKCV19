@@ -1,4 +1,5 @@
 const sequelize = require('./conexionBD');
+const bcrypt = require('bcryptjs');
 
 init = function() {
 
