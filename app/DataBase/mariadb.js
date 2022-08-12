@@ -24,7 +24,7 @@ postInternos = function(request, callback) {
         phone: request.phone,
         email: request.email,
         password: pw2
-    })
+    }).then(callback(true));
 
 }
 
