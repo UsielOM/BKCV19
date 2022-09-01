@@ -4,4 +4,10 @@ module.exports = function(app, mariadb) {
             res.send(result)
         })
     })
+
+    app.get('/get/usuarios', (req, res) => {
+        mariadb.getInternos(function(result) {
+            res.send(result);
+        })
+    })
 }

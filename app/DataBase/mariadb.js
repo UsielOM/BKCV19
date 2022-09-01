@@ -28,7 +28,12 @@ postInternos = function(request, callback) {
 
 }
 
+getInternos = function(callback) {
+    Usuarios.findAll().then(usuarios => callback(usuarios));
+}
+
 module.exports.init = init;
+module.exports.getInternos = getInternos;
 
 
 //post
