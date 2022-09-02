@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 
+
 const generarJWT = (name, email) => {
     const playload = { name, email };
     return new Promise((resolve, reject) => {

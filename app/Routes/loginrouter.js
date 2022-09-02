@@ -1,6 +1,8 @@
+const { loginUsuario, cambiarPassword, revalidarToken } = require('../Login/controllers/auth');
+
 const { check } = require('express-validator');
 const { validarCampos } = require('../Login/midelware/validar-campos');
-const { loginUsuario, cambiarPassword, revalidarToken } = require('../Login/controllers/auth');
+
 const { validarJWT } = require('../Login/midelware/validar-jwt');
 
 

@@ -1,4 +1,3 @@
-const { response } = require('express');
 const sequelize = require('../../DataBase/conexionBD');
 const bcrypt = require('bcryptjs');
 const Usuarios = require('../../DataBase/Tablas/Usuarios');
@@ -46,6 +45,13 @@ const loginUsuario = async(req, res) => {
         });
     }
 }
+
+
+
+
+
+
+
 
 const cambiarPassword = async(req, res = response) => {
     const { email, password } = req.body;
